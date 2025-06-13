@@ -1,0 +1,212 @@
+.products {
+  background-color: darken($light-color, 2%);
+
+  .dark-theme & {
+    background-color: $dark-color;
+  }
+
+  &__filters {
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    @include responsive("md") {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .search-box {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+
+    input {
+      width: 100%;
+      padding: 0.8rem 1.5rem 0.8rem 2.5rem;
+      border-radius: 50px;
+      border: 1px solid $border-color;
+      font-size: 0.9rem;
+      transition: $base-transition;
+
+      .dark-theme & {
+        background-color: lighten($dark-color, 5%);
+        border-color: lighten($dark-color, 10%);
+        color: $light-color;
+      }
+
+      &:focus {
+        outline: none;
+        border-color: $primary-color;
+        box-shadow: 0 0 0 2px rgba($primary-color, 0.2);
+      }
+    }
+
+    i {
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: $text-color;
+
+      .dark-theme & {
+        color: rgba($light-color, 0.7);
+      }
+    }
+  }
+
+  .filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+
+    .filter-btn {
+      padding: 0.5rem 1.2rem;
+      border-radius: 50px;
+      border: 1px solid $border-color;
+      background-color: $white;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: $base-transition;
+
+      .dark-theme & {
+        background-color: lighten($dark-color, 5%);
+        border-color: lighten($dark-color, 10%);
+        color: $light-color;
+      }
+
+      &:hover,
+      &.active {
+        background-color: $primary-color;
+        border-color: $primary-color;
+        color: $white;
+      }
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .product-card {
+    background-color: $white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: $box-shadow;
+    transition: $base-transition;
+
+    .dark-theme & {
+      background-color: lighten($dark-color, 5%);
+    }
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: $box-shadow-hover;
+    }
+
+    &__image {
+      position: relative;
+      overflow: hidden;
+      height: 250px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+      }
+
+      &:hover img {
+        transform: scale(1.05);
+      }
+
+      .product-badge {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        background-color: $primary-color;
+        color: $white;
+        padding: 0.3rem 0.8rem;
+        border-radius: 50px;
+        font-size: 0.8rem;
+        font-weight: 500;
+      }
+    }
+
+    &__content {
+      padding: 1.5rem;
+    }
+
+    &__category {
+      display: inline-block;
+      font-size: 0.8rem;
+      color: $primary-color;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    &__title {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: $secondary-color;
+
+      .dark-theme & {
+        color: $light-color;
+      }
+    }
+
+    &__price {
+      font-weight: 700;
+      color: $primary-color;
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+
+    &__rating {
+      color: #ffc107;
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+    }
+
+    &__actions {
+      display: flex;
+      justify-content: space-between;
+
+      .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+      }
+
+      .wishlist-btn {
+        background: none;
+        border: none;
+        color: $text-color;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: $base-transition;
+
+        .dark-theme & {
+          color: $light-color;
+        }
+
+        &:hover {
+          color: #ff4757;
+        }
+
+        &.active {
+          color: #ff4757;
+        }
+      }
+    }
+  }
+
+  &__load-more {
+    text-align: center;
+  }
+}

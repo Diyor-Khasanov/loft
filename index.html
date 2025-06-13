@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loft Empire - Premium Loft Furniture</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a href="index.html" class="logo">
+            <img src="images/logo.svg" alt="Loft Empire" />
+          </a>
+
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#home" class="nav__link active">Home</a>
+              </li>
+              <li class="nav__item">
+                <a href="#about" class="nav__link">About</a>
+              </li>
+              <li class="nav__item">
+                <a href="#products" class="nav__link">Products</a>
+              </li>
+              <li class="nav__item">
+                <a href="#news" class="nav__link">News</a>
+              </li>
+              <li class="nav__item">
+                <a href="#contact" class="nav__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header__actions">
+            <button class="search-btn" aria-label="Search">
+            </button>
+            <div class="theme-toggle">
+              <input
+                type="checkbox"
+                id="theme-toggle"
+                class="theme-toggle__input"
+              />
+              <label for="theme-toggle" class="theme-toggle__label">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+                <span class="theme-toggle__ball"></span>
+              </label>
+            </div>
+            <button class="hamburger" aria-label="Menu">
+              <span class="hamburger__line"></span>
+              <span class="hamburger__line"></span>
+              <span class="hamburger__line"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="mobile-menu">
+        <div class="mobile-menu__inner">
+          <nav class="mobile-nav">
+            <ul class="mobile-nav__list">
+              <li class="mobile-nav__item">
+                <a href="#home" class="mobile-nav__link active">Home</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a href="#about" class="mobile-nav__link">About</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a href="#products" class="mobile-nav__link">Products</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a href="#news" class="mobile-nav__link">News</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a href="#contact" class="mobile-nav__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="mobile-menu__social">
+            <a href="#" class="social-link"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"
+              ><i class="fab fa-pinterest-p"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Search Overlay -->
+      <div class="search-overlay">
+        <div class="search-overlay__inner">
+          <form class="search-form">
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Search products..."
+            />
+            <button type="submit" class="search-submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+          <button class="search-close">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero__content">
+          <h1 class="hero__title">
+            Elevate Your Space with <span>Loft Empire</span>
+          </h1>
+          <p class="hero__text">
+            Premium loft-style furniture that combines industrial charm with
+            modern comfort
+          </p>
+          <a href="#products" class="btn btn--primary">Explore Collection</a>
+        </div>
+      </div>
+      <div class="hero__scroll">
+        <span>Scroll Down</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title">Our Story</h2>
+          <p class="section__subtitle">
+            Crafting exceptional loft furniture since 2008
+          </p>
+        </div>
+
+        <div class="about__content">
+          <div class="about__slider">
+            <div class="slider">
+              <div class="slider__track">
+                <div class="slider__slide">
+                  <img src="images/about/about-1.jpg" alt="Our Workshop" />
+                </div>
+                <div class="slider__slide">
+                  <img src="images/about/about-2.jpg" alt="Design Team" />
+                </div>
+                <div class="slider__slide">
+                  <img src="images/about/about-3.jpg" alt="Craftsmanship" />
+                </div>
+                <div class="slider__slide">
+                  <img src="images/about/about-4.jpg" alt="Finished Product" />
+                </div>
+              </div>
+              <div class="slider__nav">
+                <button class="slider__prev">
+                  <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="slider__next">
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+              </div>
+              <div class="slider__dots"></div>
+            </div>
+          </div>
+
+          <div class="about__text">
+            <h3 class="about__title">Redefining Urban Living</h3>
+            <p>
+              Founded in 2008, Loft Empire began as a small workshop in Brooklyn
+              with a passion for industrial design. Today, we're a leading name
+              in loft-style furniture, combining raw materials with refined
+              craftsmanship.
+            </p>
+            <p>
+              Our designs celebrate the beauty of imperfections - the grain of
+              reclaimed wood, the texture of hand-forged metal, and the
+              character of aged leather. Each piece tells a story of its own.
+            </p>
+            <div class="about__stats">
+              <div class="stat">
+                <span class="stat__number">15+</span>
+                <span class="stat__label">Years Experience</span>
+              </div>
+              <div class="stat">
+                <span class="stat__number">500+</span>
+                <span class="stat__label">Unique Designs</span>
+              </div>
+              <div class="stat">
+                <span class="stat__number">10k+</span>
+                <span class="stat__label">Happy Customers</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products section" id="products">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title">Our Collections</h2>
+          <p class="section__subtitle">
+            Handcrafted furniture for modern lofts
+          </p>
+        </div>
+
+        <div class="products__filters">
+          <div class="search-box">
+            <input
+              type="text"
+              id="product-search"
+              placeholder="Search products..."
+            />
+            <i class="fas fa-search"></i>
+          </div>
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="living">Living Room</button>
+            <button class="filter-btn" data-filter="bedroom">Bedroom</button>
+            <button class="filter-btn" data-filter="dining">Dining</button>
+            <button class="filter-btn" data-filter="office">Office</button>
+            <button class="filter-btn" data-filter="outdoor">Outdoor</button>
+          </div>
+        </div>
+
+        <div class="products__grid">
+          <!-- Product items will be loaded here via JS -->
+        </div>
+
+        <div class="products__load-more">
+          <button class="btn btn--secondary" id="load-more">Load More</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="news section" id="news">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title">Latest News</h2>
+          <p class="section__subtitle">Design tips, trends and inspiration</p>
+        </div>
+
+        <div class="news__grid">
+          <article class="news-card">
+            <div class="news-card__image">
+              <img
+                src="https://via.placeholder.com/400x300"
+                alt="Industrial Design Trends"
+              />
+              <span class="news-card__date">May 15, 2023</span>
+            </div>
+            <div class="news-card__content">
+              <h3 class="news-card__title">
+                Top Industrial Design Trends for 2023
+              </h3>
+              <p class="news-card__excerpt">
+                Discover the emerging trends in industrial design that are
+                shaping modern interiors this year.
+              </p>
+              <a href="#" class="news-card__link">Read More</a>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="news-card__image">
+              <img
+                src="https://via.placeholder.com/400x300"
+                alt="Small Space Solutions"
+              />
+              <span class="news-card__date">April 28, 2023</span>
+            </div>
+            <div class="news-card__content">
+              <h3 class="news-card__title">
+                Maximizing Small Spaces with Loft Furniture
+              </h3>
+              <p class="news-card__excerpt">
+                Learn how to make the most of compact urban spaces with our
+                space-saving loft designs.
+              </p>
+              <a href="#" class="news-card__link">Read More</a>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="news-card__image">
+              <img
+                src="https://via.placeholder.com/400x300"
+                alt="Material Guide"
+              />
+              <span class="news-card__date">March 10, 2023</span>
+            </div>
+            <div class="news-card__content">
+              <h3 class="news-card__title">
+                The Ultimate Guide to Reclaimed Materials
+              </h3>
+              <p class="news-card__excerpt">
+                Everything you need to know about sourcing and caring for
+                furniture made from reclaimed materials.
+              </p>
+              <a href="#" class="news-card__link">Read More</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title">Get In Touch</h2>
+          <p class="section__subtitle">We'd love to hear from you</p>
+        </div>
+
+        <div class="contact__content">
+          <div class="contact__info">
+            <div class="info-card">
+              <div class="info-card__icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="info-card__content">
+                <h4 class="info-card__title">Visit Us</h4>
+                <p class="info-card__text">
+                  123 Industrial Way, Brooklyn, NY 11201
+                </p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-card__icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div class="info-card__content">
+                <h4 class="info-card__title">Call Us</h4>
+                <p class="info-card__text">+1 (555) 123-4567</p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-card__icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="info-card__content">
+                <h4 class="info-card__title">Email Us</h4>
+                <p class="info-card__text">info@loftempire.com</p>
+              </div>
+            </div>
+
+            <div class="contact__social">
+              <h4 class="contact__social-title">Follow Us</h4>
+              <div class="social-links">
+                <a href="#" class="social-link"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#" class="social-link"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a href="#" class="social-link"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="#" class="social-link"
+                  ><i class="fab fa-pinterest-p"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact__form">
+            <form id="contact-form">
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Subject"
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__col">
+            <a href="index.html" class="footer-logo">
+              <img src="images/logo.svg" alt="Loft Empire" />
+            </a>
+            <p class="footer__text">
+              Crafting exceptional loft-style furniture that blends industrial
+              aesthetics with modern comfort since 2008.
+            </p>
+          </div>
+
+          <div class="footer__col">
+            <h4 class="footer__title">Quick Links</h4>
+            <ul class="footer__links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#products">Products</a></li>
+              <li><a href="#news">News</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__col">
+            <h4 class="footer__title">Categories</h4>
+            <ul class="footer__links">
+              <li><a href="#products" data-filter="living">Living Room</a></li>
+              <li><a href="#products" data-filter="bedroom">Bedroom</a></li>
+              <li><a href="#products" data-filter="dining">Dining</a></li>
+              <li><a href="#products" data-filter="office">Office</a></li>
+              <li><a href="#products" data-filter="outdoor">Outdoor</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__col">
+            <h4 class="footer__title">Newsletter</h4>
+            <p class="footer__text">
+              Subscribe to get updates on new arrivals and special offers.
+            </p>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Your Email" required />
+              <button type="submit"><i class="fas fa-paper-plane"></i></button>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <p class="footer__copyright">
+            &copy; 2023 Loft Empire. All Rights Reserved.
+          </p>
+          <div class="footer__legal-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Shipping Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="js/about-slider.js"></script>
+    <script src="js/product-filter.js"></script>
+    <script src="js/theme-toggle.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

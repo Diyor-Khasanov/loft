@@ -1,0 +1,35 @@
+// Colors
+$primary-color: #c8a97e;
+$secondary-color: #333;
+$text-color: #555;
+$light-color: #f8f9fa;
+$dark-color: #222;
+$border-color: #e0e0e0;
+$white: #fff;
+$black: #000;
+
+// Fonts
+$primary-font: "Montserrat", sans-serif;
+$base-font-size: 16px;
+
+// Spacing
+$base-padding: 1rem;
+$base-margin: 1rem;
+$section-padding: 5rem 0;
+
+// Breakpoints
+$breakpoints: (
+  "xs": 0,
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1200px,
+  "xxl": 1400px,
+);
+
+// Shadows
+$box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+$box-shadow-hover: 0 10px 25px rgba(0, 0, 0, 0.15);
+
+// Transitions
+$base-transition: all 0.3s ease;
