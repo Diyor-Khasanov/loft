@@ -118,102 +118,119 @@ function initializeProductGrid() {
   const products = [
     {
       id: 1,
-      name: "Industrial Coffee Table",
-      category: "living",
+      name: "Стеллаж",
+      category: "stellaj",
       price: 499,
-      rating: 4,
       image: "images/products/product-1.jpg",
-      isNew: true,
     },
     {
       id: 2,
-      name: "Loft Style Sofa",
-      category: "living",
-      price: 1299,
-      rating: 5,
+      name: "Стеллаж",
+      category: "stellaj",
+      price: 499,
       image: "images/products/product-2.jpg",
     },
     {
       id: 3,
-      name: "Metal Frame Bed",
-      category: "bedroom",
-      price: 899,
-      rating: 4,
+      name: "Шкаф",
+      category: "shkaf",
+      price: 499,
       image: "images/products/product-3.jpg",
       isNew: true,
     },
     {
       id: 4,
-      name: "Reclaimed Wood Dining Table",
-      category: "dining",
-      price: 799,
-      rating: 5,
+      name: "Шкаф",
+      category: "shkaf",
+      price: 499,
       image: "images/products/product-4.jpg",
     },
     {
       id: 5,
-      name: "Leather Office Chair",
-      category: "office",
-      price: 399,
-      rating: 4,
+      name: "Кухонный Гарнитур",
+      category: "kuxnya",
+      price: 499,
       image: "images/products/product-5.jpg",
-    },
-    {
-      id: 6,
-      name: "Patio Lounge Set",
-      category: "outdoor",
-      price: 1499,
-      rating: 5,
-      image: "images/products/product-6.jpg",
       isNew: true,
     },
     {
+      id: 6,
+      name: "Шкаф",
+      category: "kuxnya",
+      price: 499,
+      image: "images/products/product-6.jpg",
+    },
+    {
       id: 7,
-      name: "Bookshelf with Metal Frame",
-      category: "living",
-      price: 599,
-      rating: 4,
-      image: "images/products/product-1.jpg",
+      name: "Кресло",
+      category: "kreslo",
+      price: 499,
+      image: "images/products/product-7.jpg",
     },
     {
       id: 8,
-      name: "Minimalist Armchair",
-      category: "living",
-      price: 349,
-      rating: 4,
-      image: "images/products/product-2.jpg",
+      name: "Кресло",
+      category: "kreslo",
+      price: 499,
+      image: "images/products/product-8.jpg",
+      isNew: true
     },
     {
       id: 9,
-      name: "Platform Bed with Storage",
-      category: "bedroom",
-      price: 799,
-      rating: 5,
-      image: "images/products/product-3.jpg",
+      name: "Tумбочка",
+      category: "tumbochka",
+      price: 499,
+      image: "images/products/product-9.jpg",
     },
     {
       id: 10,
-      name: "Extendable Dining Table",
-      category: "dining",
-      price: 899,
-      rating: 4,
-      image: "images/products/product-4.jpg",
+      name: "Tумбочка",
+      category: "tumbochka",
+      price: 499,
+      image: "images/products/product-10.jpg",
     },
     {
       id: 11,
-      name: "Executive Desk",
-      category: "office",
-      price: 699,
-      rating: 5,
-      image: "images/products/product-5.jpg",
+      name: "Kровать",
+      category: "krovat",
+      price: 499,
+      image: "images/products/product-11.jpg",
     },
     {
       id: 12,
-      name: "Outdoor Dining Set",
-      category: "outdoor",
-      price: 1299,
-      rating: 4,
-      image: "images/products/product-6.jpg",
+      name: "Kровать",
+      category: "krovat",
+      price: 499,
+      image: "images/products/product-12.jpg",
+      isNew: true
+    },
+    {
+      id: 13,
+      name: "Стол-Стул",
+      category: "stol",
+      price: 499,
+      image: "images/products/product-13.jpg",
+    },
+    {
+      id: 14,
+      name: "Стол-Стул",
+      category: "stol",
+      price: 499,
+      image: "images/products/product-14.jpg",
+    },
+    {
+      id: 15,
+      name: "Этажирка",
+      category: "etaj",
+      price: 499,
+      image: "images/products/product-15.jpg",
+    },
+    {
+      id: 16,
+      name: "Этажирка",
+      category: "etaj",
+      price: 499,
+      image: "images/products/product-16.jpg",
     },
   ];
 
@@ -223,7 +240,7 @@ function initializeProductGrid() {
   // Load more products
   loadMoreBtn.addEventListener("click", function () {
     visibleProducts += 6;
-    if (visibleProducts >= totalProducts) {
+    if (visibleProducts > totalProducts) {
       loadMoreBtn.style.display = "none";
     }
     displayProducts(products.slice(0, visibleProducts));
@@ -252,11 +269,7 @@ function initializeProductGrid() {
           )}</span>
           <h3 class="product-card__title">${product.name}</h3>
           <div class="product-card__price">$${product.price}</div>
-          <div class="product-card__rating">${ratingStars}</div>
           <div class="product-card__actions">
-            <button class="btn btn--secondary">Add to Cart</button>
-            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
-          </div>
         </div>
       `;
 
