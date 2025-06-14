@@ -120,21 +120,21 @@ function initializeProductGrid() {
       id: 1,
       name: "Стеллаж",
       category: "stellaj",
-      price: 499,
+      price: 143.99,
       image: "images/products/product-1.jpg",
     },
     {
       id: 2,
       name: "Стеллаж",
       category: "stellaj",
-      price: 499,
+      price: 149.99,
       image: "images/products/product-2.jpg",
     },
     {
       id: 3,
       name: "Шкаф",
       category: "shkaf",
-      price: 499,
+      price: 281.99,
       image: "images/products/product-3.jpg",
       isNew: true,
     },
@@ -142,14 +142,14 @@ function initializeProductGrid() {
       id: 4,
       name: "Шкаф",
       category: "shkaf",
-      price: 499,
+      price: 268.99,
       image: "images/products/product-4.jpg",
     },
     {
       id: 5,
       name: "Кухонный Гарнитур",
       category: "kuxnya",
-      price: 499,
+      price: 349.99,
       image: "images/products/product-5.jpg",
       isNew: true,
     },
@@ -157,21 +157,21 @@ function initializeProductGrid() {
       id: 6,
       name: "Шкаф",
       category: "kuxnya",
-      price: 499,
+      price: 349.99,
       image: "images/products/product-6.jpg",
     },
     {
       id: 7,
       name: "Кресло",
       category: "kreslo",
-      price: 499,
+      price: 599.99,
       image: "images/products/product-7.jpg",
     },
     {
       id: 8,
       name: "Кресло",
       category: "kreslo",
-      price: 499,
+      price: 556.99,
       image: "images/products/product-8.jpg",
       isNew: true
     },
@@ -179,28 +179,28 @@ function initializeProductGrid() {
       id: 9,
       name: "Tумбочка",
       category: "tumbochka",
-      price: 499,
+      price: 231.99,
       image: "images/products/product-9.jpg",
     },
     {
       id: 10,
       name: "Tумбочка",
       category: "tumbochka",
-      price: 499,
+      price: 149.99,
       image: "images/products/product-10.jpg",
     },
     {
       id: 11,
       name: "Kровать",
       category: "krovat",
-      price: 499,
+      price: 362.99,
       image: "images/products/product-11.jpg",
     },
     {
       id: 12,
       name: "Kровать",
       category: "krovat",
-      price: 499,
+      price: 293.99,
       image: "images/products/product-12.jpg",
       isNew: true
     },
@@ -208,29 +208,43 @@ function initializeProductGrid() {
       id: 13,
       name: "Стол-Стул",
       category: "stol",
-      price: 499,
+      price: 281.99,
       image: "images/products/product-13.jpg",
     },
     {
       id: 14,
       name: "Стол-Стул",
       category: "stol",
-      price: 499,
+      price: 187.99,
       image: "images/products/product-14.jpg",
     },
     {
       id: 15,
       name: "Этажирка",
       category: "etaj",
-      price: 499,
+      price: 162.99,
       image: "images/products/product-15.jpg",
     },
     {
       id: 16,
       name: "Этажирка",
       category: "etaj",
-      price: 499,
+      price: 149.99,
       image: "images/products/product-16.jpg",
+    },
+    {
+      id: 17,
+      name: "Цветочница",
+      category: "svetochnisa",
+      price: 87.99,
+      image: "images/products/product-17.jpg",
+    },
+    {
+      id: 18,
+      name: "Цветочница",
+      category: "svetochnisa",
+      price: 109.99,
+      image: "images/products/product-18.jpg",
     },
   ];
 
@@ -264,9 +278,6 @@ function initializeProductGrid() {
           ${product.isNew ? '<span class="product-badge">New</span>' : ""}
         </div>
         <div class="product-card__content">
-          <span class="product-card__category">${formatCategory(
-            product.category
-          )}</span>
           <h3 class="product-card__title">${product.name}</h3>
           <div class="product-card__price">$${product.price}</div>
           <div class="product-card__actions">
